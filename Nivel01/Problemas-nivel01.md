@@ -129,7 +129,7 @@ Defina una clase que tenga al menos los siguientes dos métodos:
 
 <details>
     <summary>Solución en la fuente</summary>
-    <pre>
+    ```
         class InputOutputString:
             def __init__(self):
                 self.string = ''
@@ -143,7 +143,7 @@ Defina una clase que tenga al menos los siguientes dos métodos:
         obj = InputOutputString()
         obj.get_string()
         obj.print_string()
-    </pre>
+    ```
 </details>
 
 ------
@@ -161,11 +161,97 @@ Escriba un método que pueda calcular el cuadrado de un número dado por consola
 
 <details>
     <summary>Solución en la fuente</summary>
-    <pre>
+    ```
         def sqr(n):
             return n**2
 
         num = int(input())
         print(sqr(num))
+    ```
+</details>
+
+-----
+
+### Ejercicio 7
+
+Python tiene muchas funciones prediseñadas, y si no sabes como usarlas, puedes leer la documentación online o buscar algún libro. Sin embargo, python tiene una función documento prediseñada para toda función prediseñada.
+
+Escriba un programa que imprima la función documento prediseñado en Python para los métodos abs(), int() e input(), y agrege un documento para su propia función.
+
+<details>
+    <summary>Pista</summary>
+    <pre>El método prediseñado del método documento es __doc__</pre>
+</details>
+
+<details>
+    <summary>Solución en la fuente</summary>
+    ```
+        print(abs.__doc__)
+        print(int.__doc__)
+        print(input.__doc__)
+
+        def square(num):
+            """ Return the square value of the input number.
+            The input number must be integer.
+            """
+            return num**2
+
+        print(square(2))
+        print(square.__doc__)
+    ```
+</details>
+
+-----
+
+### Ejercicio 8
+
+Defina una función que pueda calcular la suma de dos números.
+Por ejemplo:
+```Python
+Input:
+4 3
+Outpu:
+7
+```
+
+<details>
+    <summary>Pista</summary>
+    <pre>
+        Define una función con dos argumentos. Puedes calcular la suma dentro de la función y devolver su valor.
     </pre>
+</details>
+
+<details>
+    <summary>Solución en la fuente</summary>
+    ```
+        def sum_function(n1, n2):
+            return n1 + n2 
+
+        num1, num2 = map(int, input().split())
+        print(sum_function(num1, num2))
+    ```
+</details>
+
+-----
+
+### Ejercicio 9
+
+Defina una función que pueda convertir un entero a string, luego imprimirlo en consola.
+
+<details>
+    <summary>Pista</summary>
+    <pre>
+        Use str() para convertir un número a string.
+    </pre>
+</details>
+
+<details>
+    <summary>Solución en la fuente</summary>
+    ```
+        def int_to_str(i):
+            return str(i)
+
+        n = int(input())
+        print(int_to_str)
+    ```
 </details>
