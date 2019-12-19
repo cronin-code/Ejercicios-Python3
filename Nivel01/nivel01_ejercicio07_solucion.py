@@ -1,10 +1,10 @@
 def example():
-	"""
-		Function example() 
+    """
+        Function example() 
 
-	Ejemplo de la documentación para la descripción
-	y uso de una función.
-	"""
+    Ejemplo de la documentación para la descripción
+    y uso de una función.
+    """
 
 print("DOCUMENTACION FUNCION ABS\n")
 print(abs.__doc__)

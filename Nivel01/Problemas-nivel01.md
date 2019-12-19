@@ -255,3 +255,53 @@ Defina una función que pueda convertir un entero a string, luego imprimirlo en 
         print(int_to_str)
     ```
 </details>
+
+-----
+
+### Ejercicio 10
+
+Mismo ejercicio que el presentado en el ejercicio 9.
+
+-----
+
+### Ejercicio 11
+
+Defina una función que pueda recibir dos números enteros en formato string, los sume y luego imprima su resultado en consola. Similar al ejercicio 8.
+
+<details>
+    <summary>Pista</summary>
+    <pre>
+        Use int() para convertir un string a entero.
+    </pre>
+</details>
+
+<details>
+    <summary>Solución en la fuente</summary>
+    ```
+    def print_sum(string1, string2):
+        print(int(string1)+int(string2))
+
+    print_sum('32', '29')
+    ```
+</details>
+
+-----
+
+### Ejercicio 12
+
+Defina una función que pueda aceptar dos strings como entrada, luego los concatene y finalmente los imprima en consola.
+
+<details>
+    <summary>Pista</summary>
+    <pre>Use el operador + para concatenar los strings</pre>
+</details>
+
+<details>
+    <summary>Solución en la fuente</summary>
+    ```
+    def print_sum(string1, string2):
+        print(string1+string2)
+
+    print_sum('32', '29')
+    ```
+</details>
